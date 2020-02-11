@@ -1,0 +1,610 @@
+   
+*, *:before, *:after
+    box-sizing: border-box
+
+body 
+    font-family: 'Montserrat', sans-serif
+
+a 
+    display: inline-block
+    text-decoration: none
+
+img 
+    max-width: 100%
+
+.header
+    background: url('../img/header-bg.jpg') center no-repeat 
+    background-size: cover
+    color: #fff
+    padding: 47px 10px 0 10px
+    position: relative
+    &-container
+        width: 100%
+        max-width: 1652px
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-nav__link
+        color: #fff
+        text-decoration: none
+        font-weight: 600
+        font-size: 18px
+        margin-right: 35px
+        border-bottom: 1px solid transparent
+        opacity: 1
+        &:hover
+            border-bottom: 1px solid #fff
+    &-nav__burger
+        display: none
+    &-content
+        max-width: 1364px
+        margin: 0 auto
+        margin-top: 75px
+        display: flex
+        justify-content: space-between
+        &__wrapper
+            width: 75%
+        &__subtitle
+            font-size: 42px
+            font-family: 'Crimson Text', serif
+            font-style: italic
+        &__title
+            font-size: 64px
+            font-weight: 600
+            margin: 18px 0 38px 0
+        &__info
+            font-size: 23px
+            max-width: 720px
+        &__buttons
+            margin-top: 95px
+            margin-left: 60px
+        &__image
+           
+            &-wrapper
+                max-height: 780px
+.header-nav__link--active
+    display: block
+.button__story, .button__readmore
+    padding: 25px 55px
+    background: #f42267
+    color: #ffffff
+    text-transform: uppercase
+    border-radius: 35px 
+    font-size: 16px
+    font-weight: 600
+    display: inline-block
+    &:hover
+        background-color: #65328d
+.button__story
+    margin-right: 20px
+// Adaprive
+.header-nav__burger
+    display: none
+    width: 50px
+    height: 50px
+    background-color: #f42267
+    border-radius: 50%
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    -ms-border-radius: 50%
+    -o-border-radius: 50%
+    position: relative
+
+.header-nav__burger span,
+.header-nav__burger span::before,
+.header-nav__burger span::after
+    position: absolute
+    top: 50%
+    left: 50%
+    margin-top: -1px
+    margin-left: -13px
+    width: 25px
+    height: 2px
+    background-color: #fff
+    cursor: pointer
+
+.header-nav__burger span::before,
+.header-nav__burger span::after
+    content: ''
+    display: block
+    transition: 0.2s all
+    -webkit-transition: 0.2s all
+    -moz-transition: 0.2s all
+    -ms-transition: 0.2s all
+    -o-transition: 0.2s all
+
+.header-nav__burger span::before
+    transform: translateY(7px)
+    -webkit-transform: translateY(7px)
+    -moz-transform: translateY(7px)
+    -ms-transform: translateY(7px)
+    -o-transform: translateY(7px)
+
+.header-nav__burger span::after
+    transform: translateY(-7px)
+    -webkit-transform: translateY(-7px)
+    -moz-transform: translateY(-7px)
+    -ms-transform: translateY(-7px)
+    -o-transform: translateY(-7px)
+
+.header-nav__burger__active span
+    height: 0
+
+.header-nav__burger__active span::before
+    transform: rotate(45deg)
+    -webkit-transform: rotate(45deg)
+    -moz-transform: rotate(45deg)
+    -ms-transform: rotate(45deg)
+    -o-transform: rotate(45deg)
+
+.header-nav__burger__active span::after
+    transform: rotate(-45deg)
+    -webkit-transform: rotate(-45deg)
+    -moz-transform: rotate(-45deg)
+    -ms-transform: rotate(-45deg)
+    -o-transform: rotate(-45deg)
+
+// Header is over
+.active
+    color: #fff
+    background-color: #f42267
+.about
+    background: url('../img/description-bg2.jpg') center no-repeat 
+    background-size: cover
+    padding: 70px 10px 0 10px 
+    &-container
+        max-width: 1215px
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-content 
+        &__subtitle
+            font-size: 33px
+            font-family: 'Crimson Text', serif
+            font-style: italic
+            color: #484848
+        &__title
+            font-size: 50px
+            font-weight: 600
+            color: #484848
+            margin: 12px 0 20px 0
+    &-tabs__wrapper
+        max-width: 600px
+    &-tabs 
+        &__item
+            font-size: 13px
+            font-weight: 600
+            text-transform: uppercase
+            cursor: pointer
+            padding: 19px 30px
+            display: inline-block
+            border-radius: 35px
+        &__content
+            font-size: 14px
+            line-height: 25px
+            font-weight: 400
+            color: #1d1d1d
+            margin: 28px 0 110px 0
+    &-button 
+        display: inline-block
+        background-color: #f42267
+        padding: 20px 25px
+        margin-bottom: 110px
+        font-size: 16px
+        font-weight: 600
+        color: #fff
+        border-radius: 10px
+        border-bottom: 10px solid #ff5990
+        text-transform: uppercase
+        &:hover
+            background-color: #65328d
+            color: #ffffff
+            border-bottom: 10px solid #8755ad
+    &-image
+        &__watch 
+        display: flex
+        align-content: center
+        align-items: center
+        height: auto
+// About is over
+.stat
+    background: #4b2d7f
+    color: #fff
+    cursor: default
+    &-container
+        max-width: 1327px
+        margin: 0 auto
+    &-content 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        text-align: center
+        &__item
+            position: relative
+            padding: 0 33px
+            &:hover
+                background: #40286a
+            &--icon
+                font-size: 44px
+                padding-top: 80px
+            &--quantity
+                display: inline-block
+                font-weight: 600
+                font-size: 50px
+                margin: 40px 0 20px 0
+            &--title
+                font-size: 24px
+            &--text 
+                color: #9583b4
+                display: inline-block
+                margin-top: 35px
+                font-size: 18px
+                padding-bottom: 100px
+// Statistic is over
+.offer
+    background: url('../img/deal-bg.jpg') center no-repeat
+    background-size: cover
+    color: #fff
+    text-align: center
+    padding: 90px 10px 80px
+    &-container
+        max-width: 1327px
+        margin: 0 auto
+    &-subtitle
+        font-size: 48px
+        font-family: 'Crimson Text', serif
+        font-style: italic
+    &-title 
+        font-size: 50px
+        font-weight: 600
+        margin: 12px 0 38px
+    &-text 
+        font-size: 20px
+        line-height: 32px
+        margin-bottom: 53px
+    &-button 
+        display: inline-block
+        padding: 16px 27px
+        color: #ffffff
+        font-size: 15px
+        font-weight: 600
+        text-transform: uppercase
+        background-color: #f42267
+        border-bottom: 10px solid #ff5990
+        border-radius: 10px
+// Offer is over
+.ideas
+    padding: 100px 10px 110px 10px
+    &-container 
+        max-width: 1200px
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+        align-content: center
+        align-items: center
+    &-block
+        &__item1
+            color: #484848
+            cursor: default
+            margin-right: 10px;
+            &--subtitle
+                font-size: 33px
+                font-family: 'Crimson Text', serif
+                font-style: italic
+            &--caption
+                font-size: 50px
+                font-weight: 600
+                line-height: 52px
+            &--text 
+                font-size: 18px
+                line-height: 25px
+                max-width: 588px
+        &__item2
+            display: flex
+            justify-content: flex-start
+            color: #484848
+            margin-top: 60px
+            cursor: default
+            &--block    
+                max-width: 269px
+                margin-right: 10px;
+            &--title 
+                font-size: 25px
+                font-weight: 600
+                margin: 12px 0 14px
+            &--text 
+                font-size: 14px
+                line-height: 25px
+                margin-bottom: 45px
+            &--button
+                color: #ffffff
+                text-transform: uppercase
+                font-size: 15px
+                font-weight: 600
+                padding: 16px 27px
+                background-color: #f42267
+                border-bottom: 10px solid #ff5990
+                border-radius: 10px
+                cursor: pointer
+        &__video
+            max-width: 100%
+            width: 560px
+            height: 460px
+            background: url('../img/video-preview.jpg') center no-repeat
+            display: flex
+            justify-content: center
+            align-items:  center
+.video-wrapper
+    width: 96px
+    height: 96px
+    background: #f42267
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items:  center
+.fa-play
+    font-size: 50px
+    margin-left: 10px
+    color: #fff
+.far, .gradient-icon
+    font-size: 70px
+    color: rgba(0,0,0, 0.2)
+    display: block
+    background: linear-gradient(#5f0aa7, #d81550)
+    background-clip: text
+    text-fill-color: transparent
+// ideas is over
+.works
+    background: #f1f1f1
+    text-align: center
+    padding: 80px 10px 110px
+    &-container
+        max-width: 1250px
+        margin: 0 auto
+    &-block 
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__caption
+            color: #333333
+            font-size: 50px
+            font-weight: 600
+            margin-bottom: 50px
+        &__text
+            color: #333333
+            font-size: 20px
+            line-height: 32px
+            margin-bottom: 50px
+            max-width: 950px
+            text-align: center
+    &-buttons
+        .button
+            outline: none
+            border: none
+            border-radius: 35px
+            font-size: 13px
+            font-weight: 600
+            text-transform: uppercase
+            cursor: pointer
+            display: inline-block
+            border-radius: 35px 
+            padding: 17px 32px   
+            margin-right: 7px
+    &-button__readmore
+        color: #ffffff
+        text-transform: uppercase
+        font-size: 15px
+        font-weight: 600
+        padding: 16px 27px
+        background-color: #f42267
+        border-bottom: 10px solid #ff5990
+        border-radius: 10px
+        cursor: pointer   
+    &-grid
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        margin: 70px 0 90px 0
+    &-item 
+        margin: 15px
+        cursor: pointer
+.is-checked
+    color: #fff
+    background: #f42267
+    outline: none
+    border: none
+    border-radius: 35px
+    cursor: pointer
+    padding: 19px 30px
+    display: inline-block
+    border-radius: 35px
+    box-shadow: 1.169px 3.825px 16px 0px rgba(1, 2, 2, 0.35)
+// works is over
+.sponsors
+    background: #4b2d7f
+    padding: 110px 0
+    &-container
+        max-width: 1210px
+        margin: 0 auto
+    &-block 
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        justify-items: center
+        justify-content: space-around
+
+.margin
+    margin-top: 40px
+.amazon
+    margin-top: 70px
+// sponsors is over
+.comment
+    background: url('../img/quote-bg.jpg') center no-repeat
+    padding: 10px 10px 0 10px
+    color: #ffffff
+    &-container
+        max-width: 1210px
+        margin: 0 auto
+        display: flex
+    &-content
+        &__subtitle
+            display: inline-block
+            margin: 63px 0 10px 0
+            font-size: 40px
+            font-family: 'Crimson Text', serif
+            font-style: italic
+        &__caption
+            font-size: 50px
+            font-weight: 600
+            margin-bottom: 45px
+        &__text
+            font-size: 22px
+            font-weight: 300
+            font-style: italic
+            max-width: 530px
+            margin-left: 40px
+            margin-bottom: 75px
+        &__user
+            &--rating
+                color: #f42267
+            &--name
+                display: block
+                font-size: 24px
+                font-weight: 300
+                margin-top: 27px
+    &-photo
+        margin-left: 70px
+.fa-quote-left
+    font-size: 36px
+    color: #f42267
+// comment is over
+.help
+    background: url('../img/form-bg.jpg') center no-repeat
+    background-size: cover
+    text-align: center
+    color: #fff
+    padding: 85px 10px
+    &-container
+        max-width: 1210px
+        margin: 0 auto
+    &-caption
+        font-size: 50px
+        font-weight: 600
+    &-subtitle
+        display: inline-block
+        font-size: 28px
+        font-weight: 600
+        margin: 15px 0 30px
+    &-text
+        font-size: 18px
+        margin-bottom: 63px
+    &-form 
+        &__wrapper
+            display: flex
+            justify-content: center
+            align-items: center
+        &__input
+            padding: 22px 10px 22px 42px
+            width: 450px
+            border: none
+            background: rgba(255, 255, 255, 0.1)
+            border-radius: 7px
+            color: #fff
+            font-size: 20px
+            margin-right: 20px
+        &__submit
+            display: inline-block
+            border: none
+            color: #ffffff
+            text-transform: uppercase
+            font-size: 15px
+            font-weight: 600
+            padding: 20px 45px
+            background-color: #4b2d7f
+            border-bottom: 10px solid #a57ee9
+            border-radius: 10px
+            cursor: pointer
+// help is over
+.social
+    background: #4b2d7f
+    padding: 80px 10px
+    &-container
+        max-width: 910px
+        margin: 0 auto
+        display: flex
+        justify-content: space-between   
+    &-link
+        color: #fff
+        font-size: 27px
+        line-height: 38px
+        &:hover
+            color: #f42267
+
+.social-link:last-child
+    padding-left: 40px
+.social-link:not(:last-child)
+    padding: 0 40px
+    border-right: 1px solid #7647c7
+.social-link:first-child
+    padding-left: 0
+// social is over
+.bottomNav
+    background: url('../img/description-bg2.jpg') center no-repeat
+    background-size: cover
+    padding: 115px 10px 50px 10px
+    &-container
+        max-width: 1210px
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+    &__wrapper
+        text-align: center
+    &-block
+        display: flex
+        &__item
+            display: flex
+            flex-direction: column
+            &--links
+                margin-bottom: 85px
+        &__item
+            &:first-child
+                margin-bottom: 20px
+        &__caption
+            font-size: 28px
+            font-weight: 600
+            color: #4b2d7f
+            margin-bottom: 25px
+            cursor: default
+    &-link
+        display: block
+        font-size: 16px
+        font-weight: 600
+        color: #171717
+        margin-bottom: 10px
+        &:hover
+            color: #4b2d7f
+    &__margin-image
+        margin-right: 20px
+    &-image
+        margin-top: 10px
+// bottomNav is over
+.footer
+    font-size: 18px
+    font-weight: 600
+    color: #171717
+    background: #f6f6f6
+    padding: 50px 0
+    &-container
+        max-width: 1200px
+        margin: 0 auto
+        text-align: center
+    &-link
+        color: #171717
+        margin-right: 15px
+        &:hover
+            color: #4b2d7f
+.footer-link:not(:first-child)
+    margin-left: 15px
+// footer is over
+
+@import "media"
